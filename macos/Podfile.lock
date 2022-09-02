@@ -1,0 +1,34 @@
+PODS:
+  - blue_thermal_printer (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+  - network_info_plus_macos (0.0.1):
+    - FlutterMacOS
+  - printing (1.0.0):
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - blue_thermal_printer (from `Flutter/ephemeral/.symlinks/plugins/blue_thermal_printer/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - network_info_plus_macos (from `Flutter/ephemeral/.symlinks/plugins/network_info_plus_macos/macos`)
+  - printing (from `Flutter/ephemeral/.symlinks/plugins/printing/macos`)
+
+EXTERNAL SOURCES:
+  blue_thermal_printer:
+    :path: Flutter/ephemeral/.symlinks/plugins/blue_thermal_printer/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  network_info_plus_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/network_info_plus_macos/macos
+  printing:
+    :path: Flutter/ephemeral/.symlinks/plugins/printing/macos
+
+SPEC CHECKSUMS:
+  blue_thermal_printer: 74a7de823607346bfc38c05e171a2925edfd1c4a
+  FlutterMacOS: 85f90bfb3f1703249cf1539e4dfbff31e8584698
+  network_info_plus_macos: d2b9e6c01c291449b91a584217aa53b113847dbd
+  printing: e4b7e232ff3d5d50a70b20d959aa71035a5c31f9
+
+PODFILE CHECKSUM: a884f6dd3f7494f3892ee6c81feea3a3abbf9153
+
+COCOAPODS: 1.11.3
