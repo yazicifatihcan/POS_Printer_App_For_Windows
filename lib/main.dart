@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pos_printer_example/home_screen/home_screen.dart';
 import 'package:pos_printer_example/home_screen/view/home_screen_view.dart';
 import 'package:pos_printer_example/general/printer_manager.dart';
 
-void main() async{
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await CustomUsbPrinterManager.instance.init();
   runApp(const MyApp());
 }
@@ -18,9 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreenView(),
+      home: const HomeScreen(),
     );
   }
 }
-
-

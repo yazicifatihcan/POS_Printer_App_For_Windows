@@ -32,8 +32,7 @@ class HomeScreenView extends GetView<HomeScreenController> {
                 : Column(
                     children: [
                       Expanded(
-                          child: Obx(
-                        () => ListView.separated(
+                          child: ListView.separated(
                             itemCount: controller.printerList.length,
                             separatorBuilder: (context, index) => const SizedBox(height: 12),
                             itemBuilder: (context, index) {
@@ -44,17 +43,16 @@ class HomeScreenView extends GetView<HomeScreenController> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(controller.printerList[index].name!),
-                                      Checkbox(
+                                      Obx(() => Checkbox(
                                           value: controller.selectedIndex == index,
                                           onChanged: (_) {
                                             controller.selectedIndex = index;
-                                          })
+                                          }))
                                     ],
                                   ),
                                 ),
                               );
-                            }),
-                      )),
+                            })),
                     ],
                   ),
           )),
