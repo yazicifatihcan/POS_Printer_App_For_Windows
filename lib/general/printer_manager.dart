@@ -12,7 +12,7 @@ class CustomUsbPrinterManager {
 
   CustomUsbPrinterManager();
 
-//We need to call this function when the app starting to initialize the late values.
+//We need to call this function when the app starting to initialize the values.
   Future<void> init() async {
     profile = await CapabilityProfile.load();
     instance.generator = Generator(PaperSize.mm80, instance.profile);

@@ -1,5 +1,8 @@
 import 'package:pos_printer_example/dummy_model/order_model.dart';
 
+
+// Dummy order model that we used in the receipt.
+
 final DummyOrderModel dummyOrderModel= DummyOrderModel(
 
 customerName: "Fatih Can Yazıcı",

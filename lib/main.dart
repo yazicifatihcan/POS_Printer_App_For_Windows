@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pos_printer_example/home_screen/home_screen.dart';
-import 'package:pos_printer_example/home_screen/view/home_screen_view.dart';
 import 'package:pos_printer_example/general/printer_manager.dart';
 
 void main() async {
